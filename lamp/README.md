@@ -35,7 +35,8 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 
 * Peer authentication failed for user "postgres":
 
-отредактировать /etc/postgresql/13/main/pg_hba.conf, заменить первый "peer" to "trust".
+* отредактировать /etc/postgresql/13/main/pg_hba.conf, заменить первый "peer" на "trust".
+
 ```
 sudo service postgresql stop
 sudo service postgresql start
@@ -43,7 +44,9 @@ psql -U postgres
 ALTER USER postgres WITH PASSWORD 'postgres';
 exit;
 ```
-отредактировать  /etc/postgresql/13/main/pg_hba.conf, заменить "trust" to "md5".
+
+* отредактировать  /etc/postgresql/13/main/pg_hba.conf, заменить "trust" на "md5".
+
 ```
 sudo service postgresql restart
 sudo apt install php-pgsql
