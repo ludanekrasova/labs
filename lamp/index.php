@@ -14,7 +14,9 @@ $res = $mysqli->use_result();
 
 print("<table border=1>");
 while ($row = $res->fetch_assoc()) {
-    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $row['name'], $row['surname'], $row['subject'], $r}
+    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n",
+           $row['name'], $row['surname'], $row['subject'], $row['grade']);
+}
 print("</table>");
 
 ?>
