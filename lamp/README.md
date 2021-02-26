@@ -6,12 +6,6 @@
 sudo apt install apache2
 ```
 
-## Установка Midnight Commander
-```
-sudo apt install mc
-sudo mc
-```
-
 ## Установка PHP
 
 ```
@@ -64,6 +58,12 @@ psql -U postgres postgres < dump.sql
 ## Экспорт базы из Postgres
 ```
 pg_dump -U postgres postgres > dump.sql
+```
+
+## Установка Midnight Commander (опционально)
+```
+sudo apt install mc
+sudo mc
 ```
 
 ## Установка MySQL (опционально)
