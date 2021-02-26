@@ -15,6 +15,9 @@ sudo service mysql restart
 sudo apt install phpmyadmin
 sudo service apache2 restart
 
+install midnight commander:
+sudp apt install mc
+
 edit /etc/phpmyadmin/config.inc.php, uncomment:
 $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
 
