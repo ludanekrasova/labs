@@ -6,6 +6,15 @@
 sudo apt install apache2
 ```
 
+## Установка PHP
+
+```
+sudo apt install php php-pgsql
+sudo service apache2 restart
+```
+
+* http://localhost (скопировать index.php в /var/www/html)
+
 ## Установка Postgres
 ```
 sudo apt install postgresql postgresql-contrib
@@ -21,16 +30,6 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 ```
 
 * http://localhost/pgadmin4 (login/password: postgres/postgres)
-
-
-## Установка PHP
-
-```
-sudo apt install php php-pgsql
-sudo service apache2 restart
-```
-
-* http://localhost (скопировать index.php в /var/www/html)
 
 
 ## Ошибки
