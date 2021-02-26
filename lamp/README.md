@@ -16,11 +16,10 @@ sudo mc
 
 ```
 sudo apt install php
-(copy index.php to /var/www/html)
 sudo service apache2 restart
 ```
 
-* http://localhost
+* http://localhost (скопировать index.php в /var/www/html)
 
 ## Установка Postgres
 ```
@@ -36,23 +35,24 @@ sudo apt install pgadmin4-web
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
 
-* http://localhost/pgadmin4
+* http://localhost/pgadmin4 (login/password: postgres/postgres)
 
-login/password: postgres/postgres 
+### Ошибки
+
+* Peer authentication failed for user "postgres":
 
 ```
-Peer authentication failed for user "postgres":
-edit /etc/postgresql/13/main/pg_hba.conf, replace first "peer" to "trust".
+отредактировать /etc/postgresql/13/main/pg_hba.conf, заменить первый "peer" to "trust".
+```
 sudo service postgresql stop
 sudo service postgresql start
 psql -U postgres
-
 ALTER USER postgres WITH PASSWORD 'postgres';
 exit;
-
-edit /etc/postgresql/13/main/pg_hba.conf, replace "trust" to "md5".
+```
+отредактировать  /etc/postgresql/13/main/pg_hba.conf, заменить "trust" to "md5".
+```
 sudo service postgresql restart
-
 sudo apt install php-pgsql
 sudo service apache2 restart
 ```
