@@ -41,7 +41,6 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 
 * Peer authentication failed for user "postgres":
 
-```
 отредактировать /etc/postgresql/13/main/pg_hba.conf, заменить первый "peer" to "trust".
 ```
 sudo service postgresql stop
