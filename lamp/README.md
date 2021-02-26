@@ -30,7 +30,8 @@ create database test, run test.sql
 
 ## Установка Midnight Commander
 ```
-sudp apt install mc
+sudo apt install mc
+sudo mc
 ```
 
 ## Установка PHP
