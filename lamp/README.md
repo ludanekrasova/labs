@@ -42,10 +42,15 @@ then open http://localhost/pgadmin4
 login/password: postgres/postgres 
 
 Peer authentication failed for user "postgres":
-edit /etc/postgresql/13/main/pg_hba.conf, replace peer to md5:
-local   all             postgres                                trust
+edit /etc/postgresql/13/main/pg_hba.conf, replace first "peer" to "trust".
+sudo service postgresql stop
+sudo service postgresql start
+psql -U postgres
 
+ALTER USER postgres WITH PASSWORD 'postgres';
+exit;
 
-
+edit /etc/postgresql/13/main/pg_hba.conf, replace "trust" to "md5".
+sudo service postgresql restart
 
 ```
