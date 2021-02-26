@@ -19,4 +19,8 @@ edit /etc/phpmyadmin/config.inc.php, uncomment:
 $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
 
 add index.php to /var/www/html
+
+login to phpmyadmin as: http://localhost/phpmyadmin
+login: root
+password: (none)
 ```
