@@ -37,7 +37,15 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 sudo apt install pgadmin4-web
 sudo /usr/pgadmin4/bin/setup-web.sh
 
+
 then open http://localhost/pgadmin4
 login/password: postgres/postgres 
+
+Peer authentication failed for user "postgres":
+edit /etc/postgresql/13/main/pg_hba.conf, replace peer to md5:
+local   all             postgres                                trust
+
+
+
 
 ```
