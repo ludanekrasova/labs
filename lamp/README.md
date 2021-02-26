@@ -26,4 +26,7 @@ add index.php to /var/www/html
 login to phpmyadmin as: http://localhost/phpmyadmin
 login: root
 password: (none)
+
+create database test
+run test.sql
 ```
