@@ -12,7 +12,10 @@ $mysqli->set_charset("utf8");
 $mysqli->real_query($sql);
 $res = $mysqli->use_result();
 
+print("<table border=1>");
 while ($row = $res->fetch_assoc()) {
-    printf("%s %s %s %s<br>\n", $row['name'], $row['surname'], $row['subject'], $row['grade']);
-}
+    printf("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n", $row['name'], $row['surname'], $row['subject'], $r}
+print("</table>");
+
 ?>
+    
