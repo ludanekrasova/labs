@@ -40,6 +40,8 @@ sudo apt install php
 (copy index.php to /var/www/html)
 ```
 
+* http://localhost
+
 ## Установка Postgres
 ```
 sudo apt install postgresql postgresql-contrib
