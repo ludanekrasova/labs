@@ -33,7 +33,7 @@ sudo service apache2 restart
 * http://localhost (скопировать index.php в /var/www/html)
 
 
-### Ошибки
+## Ошибки
 
 Peer authentication failed for user "postgres":
 
