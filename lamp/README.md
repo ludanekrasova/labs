@@ -33,7 +33,7 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 
 ### Ошибки
 
-* Peer authentication failed for user "postgres":
+Peer authentication failed for user "postgres":
 
 * отредактировать /etc/postgresql/13/main/pg_hba.conf, заменить первый "peer" на "trust".
 
