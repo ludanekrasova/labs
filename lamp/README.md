@@ -53,4 +53,6 @@ exit;
 edit /etc/postgresql/13/main/pg_hba.conf, replace "trust" to "md5".
 sudo service postgresql restart
 
+sudo apt install php-pgsql
+sudo service apache2 restart
 ```
