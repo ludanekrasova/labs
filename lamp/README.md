@@ -18,4 +18,5 @@ sudo service apache2 restart
 edit /etc/phpmyadmin/config.inc.php, uncomment:
 $cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
 
+add index.php to /var/www/html
 ```
