@@ -39,6 +39,7 @@ sudo mc
 ```
 sudo apt install php
 (copy index.php to /var/www/html)
+sudo service apache2 restart
 ```
 
 * http://localhost
