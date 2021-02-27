@@ -36,21 +36,9 @@ name | surname | subject | grade | date
 
 # Windows
 
-Достаточно скачать один win64 installer Postgres, там есть все, включая pgadmin и HTTP сервер (apache2 EDB).
+Для windows существуют специальные инсталляторы WAPP (Windows + Apache + Postgres + PHP):
 
-* https://www.postgresql.org/download/windows/
-
-## apache
-
-Файлы хостятся в `C:\Program Files (x86)\edb\pem\httpd\apache\www`.
-
-* http://localhost:8080/
-
-## pgadmin4
-
-(запускается через ярлык в программах):
-
-* http://127.0.0.1:64378
+* https://bitnami.com/stack/wapp/installer
 
 
 # Linux
