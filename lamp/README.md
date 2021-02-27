@@ -75,6 +75,22 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 * http://localhost/pgadmin4 (login/password: postgres/postgres)
 
 
+## Импорт базы в Postgres
+```
+psql -U postgres postgres < dump.sql
+```
+
+## Экспорт базы из Postgres
+```
+pg_dump -U postgres postgres > dump.sql
+```
+
+## Установка Midnight Commander (опционально)
+```
+sudo apt install mc
+sudo mc
+```
+
 ## Ошибки
 
 Peer authentication failed for user "postgres":
@@ -95,19 +111,4 @@ exit;
 sudo service postgresql restart
 ```
 
-## Импорт базы в Postgres
-```
-psql -U postgres postgres < dump.sql
-```
-
-## Экспорт базы из Postgres
-```
-pg_dump -U postgres postgres > dump.sql
-```
-
-## Установка Midnight Commander (опционально)
-```
-sudo apt install mc
-sudo mc
-```
 
