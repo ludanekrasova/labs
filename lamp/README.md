@@ -23,10 +23,15 @@ id | person_id | subject_id | grade | date
 * Пример SQL запроса:
 
 ```sql
-SELECT name, surname, subject, grade from people
+SELECT name, surname, subject, grade, date from people
 JOIN grades ON grades.person_id = id
 JOIN subjects ON grades.subject_id=subjects.id
 ```
+
+name | surname | subject | grade | date
+-----|---------|---------|-------|-----
+Амадей| Моцарт | Музыка  | 5     | 1791-12-05
+
 
 
 # LAMP
