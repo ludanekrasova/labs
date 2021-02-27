@@ -40,11 +40,9 @@ name | surname | subject | grade | date
 
 * https://bitnami.com/stack/wapp/installer
 
-Apache2 по умолчанию ставится на порт 81:
+Свой `index.php` можно положить в `C:\Bitnami\wappstack-7.4.15-0\apache2\htdocs` вместо `index.html`.
 
 * http://127.0.0.1:81
-
-Свой `index.php` можно положить в `C:\Bitnami\wappstack-7.4.15-0\apache2\htdocs` вместо `index.html`.
 
 В Bitnami используется phppgadmin, но если надо, то pgadmin4 можно поставить отдельно. 
 
