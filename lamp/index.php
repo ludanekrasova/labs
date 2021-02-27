@@ -21,8 +21,13 @@ if(!$db){
    echo "Error : Unable to open database\n";
 }
 
+$sql='
 
-$sql='select name,surname,subject,grade from people join grades on grades.person_id=id join subjects on grades.subject_id=subjects.id;';
+SELECT name, surname, subject, grade, date, faculty from people
+    JOIN grades on grades.person_id = people.id
+    JOIN subjects on grades.subject_id = subjects.id
+    JOIN faculties on grades.faculty_id = faculties.id
+';
 
 $result = pg_query($db, $sql);
 

@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.2 (Ubuntu 13.2-1.pgdg20.04+1)
--- Dumped by pg_dump version 13.2 (Ubuntu 13.2-1.pgdg20.04+1)
+-- Dumped from database version 13.1
+-- Dumped by pg_dump version 13.1
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -16,19 +16,41 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
+ALTER TABLE ONLY public.subjects DROP CONSTRAINT subjects_pkey;
+ALTER TABLE ONLY public.people DROP CONSTRAINT people_pkey;
+ALTER TABLE ONLY public.grades DROP CONSTRAINT grades_pkey;
+ALTER TABLE ONLY public.faculties DROP CONSTRAINT faculties_pkey;
+DROP TABLE public.subjects;
+DROP TABLE public.people;
+DROP TABLE public.grades;
+DROP TABLE public.faculties;
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
+
+--
+-- Name: faculties; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.faculties (
+    id integer NOT NULL,
+    faculty character varying(255)
+);
+
+
+ALTER TABLE public.faculties OWNER TO postgres;
 
 --
 -- Name: grades; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.grades (
+    id integer NOT NULL,
     person_id integer,
     subject_id integer,
     grade integer,
-    grade_id integer NOT NULL
+    date date,
+    faculty_id integer
 );
 
 
@@ -60,30 +82,39 @@ CREATE TABLE public.subjects (
 ALTER TABLE public.subjects OWNER TO postgres;
 
 --
+-- Data for Name: faculties; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.faculties VALUES (1, 'Хогвартс');
+
+
+--
 -- Data for Name: grades; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.grades (person_id, subject_id, grade, grade_id) FROM stdin;
-1	1	2	1
-\.
+INSERT INTO public.grades VALUES (1, 1, 1, 5, '2021-01-01', 1);
 
 
 --
 -- Data for Name: people; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.people (id, name, surname) FROM stdin;
-1	Амадей	Моцарт
-\.
+INSERT INTO public.people VALUES (1, 'Стивен', 'Кинг');
 
 
 --
 -- Data for Name: subjects; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.subjects (id, subject) FROM stdin;
-1	Музыка
-\.
+INSERT INTO public.subjects VALUES (1, 'Литература');
+
+
+--
+-- Name: faculties faculties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.faculties
+    ADD CONSTRAINT faculties_pkey PRIMARY KEY (id);
 
 
 --
@@ -91,7 +122,7 @@ COPY public.subjects (id, subject) FROM stdin;
 --
 
 ALTER TABLE ONLY public.grades
-    ADD CONSTRAINT grades_pkey PRIMARY KEY (grade_id);
+    ADD CONSTRAINT grades_pkey PRIMARY KEY (id);
 
 
 --
@@ -113,4 +144,3 @@ ALTER TABLE ONLY public.subjects
 --
 -- PostgreSQL database dump complete
 --
-
