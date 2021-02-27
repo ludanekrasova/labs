@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
-.table td {
+.table th {
    text-align: center;
 }
 
@@ -86,12 +86,12 @@ function caption($key) {
     return isset($keys[$key]) ? $keys[$key] : $key;
 }
 
-echo "<table class='table table-hover'>\n";
+echo "<table class='table table-hover table-striped'>\n";
 
 $fields = pg_num_fields($result);
 for ($i = 0; $i < $fields; $i++) {
     $field = caption(pg_field_name($result, $i));
-    echo "\t\t<td>$field</td>\n";
+    echo "\t\t<th>$field</th>\n";
 }
 
 
