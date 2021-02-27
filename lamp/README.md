@@ -1,3 +1,32 @@
+# Таблицы
+
+* people
+
+id|name|surname
+--|--|--
+1|Амадей|Моцарт
+
+* subjects
+
+id | subject 
+--|--
+1 | Музыка
+
+* grades
+
+id | person_id | subject_id | grade | date
+--|--|--|--
+1 | 1 | 1 | 5 | 1791-12-05
+
+* Пример SQL запроса:
+
+```sql
+SELECT name, surname, subject, grade from people
+JOIN grades ON grades.person_id = id
+JOIN subjects ON grades.subject_id=subjects.id
+```
+
+
 # LAMP
 
 ## Установка apache2
