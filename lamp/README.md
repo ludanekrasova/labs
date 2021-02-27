@@ -40,13 +40,15 @@ name | surname | subject | grade | date
 
 * https://www.postgresql.org/download/windows/
 
-## apache2
+## apache
 
 Файлы хостятся в `C:\Program Files (x86)\edb\pem\httpd\apache\www`.
 
 * http://localhost:8080/
 
-## pgadmin4 (запускается через ярлык в программах):
+## pgadmin4
+
+(запускается через ярлык в программах):
 
 * http://127.0.0.1:64378
 
