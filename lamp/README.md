@@ -36,7 +36,7 @@ name | surname | subject | grade | date
 
 # Windows
 
-Достаточно скачать один win64 installer Postgres, там есть все, включая pgadmin и HTTP сервер (PEMHTTpPD aka apache2 EDB).
+Достаточно скачать один win64 installer Postgres, там есть все, включая pgadmin и HTTP сервер (apache2 EDB).
 
 * https://www.postgresql.org/download/windows/
 
