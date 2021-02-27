@@ -48,7 +48,7 @@ name | surname | subject | grade | date
 
 * http://127.0.0.1:81/phppgadmin (login postgres/postgres)
 
-Нужно отключить кеш PHP - отредактировать C:\Bitnami\wappstack-7.4.15-0\php\etc\php.ini:
+Очень мешает кеш PHP, чтобы его отключить надо отредактировать `C:\Bitnami\wappstack-7.4.15-0\php\etc\php.ini`:
 
 `opcache.enable=0`
 
