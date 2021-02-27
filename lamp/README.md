@@ -34,7 +34,24 @@ name | surname | subject | grade | date
 
 Запросы могут быть сложнее, чтобы собирать данные по всем предметам или оценкам за определенный период или выводить среднюю оценку.
 
-# LAMP
+# Windows
+
+Достаточно скачать один win64 installer Postgres, там есть все, включая pgadmin и HTTP сервер (PEMHTTpPD aka apache2 EDB).
+
+* https://www.postgresql.org/download/windows/
+
+## apache2
+
+Файлы хостятся в `C:\Program Files (x86)\edb\pem\httpd\apache\www`.
+
+* http://localhost:8080/
+
+## pgadmin4 (запускается через ярлык в программах):
+
+* http://127.0.0.1:64378
+
+
+# Linux
 
 ## Установка apache2
 
