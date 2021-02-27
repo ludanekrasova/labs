@@ -46,7 +46,7 @@ name | surname | subject | grade | date
 
 В Bitnami используется phppgadmin, но если надо, то pgadmin4 можно поставить отдельно. 
 
-* http://127.0.0.1:81/phppgadmin
+* http://127.0.0.1:81/phppgadmin (login postgres/postgres)
 
 # Linux
 
