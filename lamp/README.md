@@ -49,7 +49,7 @@ Apache2 по умолчанию ставится на порт 81:
 * http://127.0.0.1:81
 * http://127.0.0.1:81/phppgadmin
 
-Свои скрипты (index.php) можно положить в `C:\Bitnami\wappstack-7.4.15-0\apache2\htdocs`.
+Свой `index.php` можно положить в `C:\Bitnami\wappstack-7.4.15-0\apache2\htdocs` вместо `index.html`.
 
 # Linux
 
