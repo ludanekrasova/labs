@@ -124,7 +124,7 @@ sudo service postgresql restart
 
 ## Установка MySQL (опционально)
 
-``
+```
 sudo apt install mysql-server
 sudo mysql -u root
 
