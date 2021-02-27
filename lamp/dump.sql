@@ -85,7 +85,9 @@ ALTER TABLE public.subjects OWNER TO postgres;
 -- Data for Name: faculties; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.faculties VALUES (1, 'Хогвартс');
+INSERT INTO public.faculties VALUES (1, 'Гриффендор');
+INSERT INTO public.faculties VALUES (2, 'Пуффендуй');
+INSERT INTO public.faculties VALUES (3, 'Слизерин');
 
 
 --
@@ -93,6 +95,8 @@ INSERT INTO public.faculties VALUES (1, 'Хогвартс');
 --
 
 INSERT INTO public.grades VALUES (1, 1, 1, 5, '2021-01-01', 1);
+INSERT INTO public.grades VALUES (2, 2, 2, 4, '2021-01-02', 2);
+INSERT INTO public.grades VALUES (3, 3, 3, 3, '2021-01-03', 3);
 
 
 --
@@ -100,6 +104,8 @@ INSERT INTO public.grades VALUES (1, 1, 1, 5, '2021-01-01', 1);
 --
 
 INSERT INTO public.people VALUES (1, 'Стивен', 'Кинг');
+INSERT INTO public.people VALUES (2, 'Амадей', 'Моцарт');
+INSERT INTO public.people VALUES (3, 'Исаак', 'Ньютон');
 
 
 --
@@ -107,6 +113,8 @@ INSERT INTO public.people VALUES (1, 'Стивен', 'Кинг');
 --
 
 INSERT INTO public.subjects VALUES (1, 'Литература');
+INSERT INTO public.subjects VALUES (2, 'Музыка');
+INSERT INTO public.subjects VALUES (3, 'Физика');
 
 
 --
