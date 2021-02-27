@@ -42,11 +42,11 @@ name | surname | subject | grade | date
 
 Свой `index.php` можно положить в `C:\Bitnami\wappstack-7.4.15-0\apache2\htdocs` вместо `index.html`.
 
-* http://127.0.0.1:81
+* http://localhost (Apache установлен на 80 порт)
 
 В Bitnami используется phppgadmin, но если надо, то pgadmin4 можно поставить отдельно. 
 
-* http://127.0.0.1:81/phppgadmin (login postgres/postgres)
+* http://localhost/phppgadmin (login postgres/postgres)
 
 # Linux
 
