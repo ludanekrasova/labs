@@ -24,7 +24,7 @@ id | person_id | subject_id | grade | date
 
 ```sql
 SELECT name, surname, subject, grade, date from people
-JOIN grades ON grades.person_id = id
+JOIN grades ON grades.person_id = people.id
 JOIN subjects ON grades.subject_id = subjects.id
 ```
 
