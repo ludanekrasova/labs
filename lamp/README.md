@@ -40,11 +40,7 @@ name | surname | subject | grade | date
 
 * https://bitnami.com/stack/wapp/installer
 
-В Bitnami используется phppgadmin, но если надо, то pgadmin4 можно поставить отдельно:
-
-* https://www.pgadmin.org
-
-Apache2 по умолчанию ставится на порт 81:
+В Bitnami используется phppgadmin, но если надо, то pgadmin4 можно поставить отдельно. Apache2 по умолчанию ставится на порт 81:
 
 * http://127.0.0.1:81
 * http://127.0.0.1:81/phppgadmin
